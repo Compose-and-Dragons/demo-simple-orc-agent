@@ -32,8 +32,8 @@ func main() {
 		panic(err)
 	}
 
-	// Create a new agent named Bob
-	npcAgent, err := agents.NewAgent("Bob",
+	// Create a new agent named npc_agent
+	npcAgent, err := agents.NewAgent("npc_agent",
 		agents.WithDMR(modelRunnerBaseUrl),
 		agents.WithParams(openai.ChatCompletionNewParams{
 			Model:       modelRunnerChatModel,
